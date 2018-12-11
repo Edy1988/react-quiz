@@ -1,24 +1,17 @@
 import React, { Component } from 'react';
+import Question from './components/Question.js';
+import QuestionCount from './components/QuestionCount.js';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          
-          <p>
-          Hi team!
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <QuestionCount
+      counter={1}
+      total={5}
+      />
+        <Question content="What is your favourite food?" />
       </div>
     );
   }
